@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="css/waves.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PetHolder</title>
+</head>
+
+<body>
+  <!-- Navbar goes here -->
+  <nav>
+    <div class="nav-wrapper">
+        <p data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></p>
+      <a href="#" class="brand-logo center">PetHolder</a>
+
+    </div>
+  </nav>
+  <!-- Page Layout here -->
+
+  <!-- Modal Structure -->
+    <div id="modal1" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <h4 class="center">Lista de Pets</h4>
+        <ul title="vendas" class="lista demo-list-two mdl-list">
+
+
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Fechar</a>
+      </div>
+    </div>
+
+    <ul id="slide-out" class="side-nav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="img/dog.jpg" width="300" height="200">
+        </div>
+        <a href="#!name"><span class="black-text name">PetHolder</span></a>
+      </div></li>
+      <li><a href="home.html"><i class="fa fa-home" style="font-size:26px"></i>Home</a></li>
+      <li><a href="timeline.html"><i class="fa fa-paw" style="font-size:24px"></i></i>Timeline</a></li>
+      <li><a href="vendas.html"><i class="fa fa-tags" style="font-size:24px"></i>Vendas</a></li>
+      <li><a href="mapa.html"><i class="fa fa-map" style="font-size:24px"></i>Mapa</a></li>
+    </ul>
+
+  <div class="row">
+
+    <div class="col s12">
+      <!-- Teal page content  -->
+      <div id="vendas" class="col s12 m12 l12">
+        <div class="row">
+          <div class="container">
+            <div class="container">
+                 
+                  <div class="row">
+
+                    <h3 class="center">Nova Venda</h3>
+                    <br>
+                    <div class="container">
+                      <p id="text-center">Endereço: </p>
+<!--                      <form id="location-form">-->
+                        <input type="text" id="location-input" placeholder="Rua, número, cidade, estado, país" class="form-control form-control-lg">
+                        <br>
+  
+<!--
+                      <div class="card-block" id="formatted-address"></div>
+                      <div class="card-block" id="address-components"></div>
+                      <div class="card-block" id="geometry"></div>
+-->
+                    </div>
+
+                    <div class="container">
+
+
+                    <div class="container">
+                      <div class="col s12 m12 l12">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">location_on</i>
+                          <input id="cepEndereco" type="number" class="validate" required="required">
+                          <label for="cepEndereco">CEP:</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="input-field col s8 m8 l8 offset-l2 offset-m2 offset-s2">
+                      <select required id="racaPet">
+                        <option value="" disabled selected>Escolha a raça do Pet</option>
+                        <option value="Basenji">Basenji</option>
+                        <option value="Beagle">Beagle</option>
+                        <option value="Bichon Frisé">Bichon Frisé</option>
+                        <option value="Boston Terrier">Boston Terrier</option>
+                        <option value="Buldogue Francês">Buldogue Francês</option>
+                        <option value="Cavalier King">Cavalier King</option>
+                        <option value="Chihuahua">Chihuahua</option>
+                        <option value="Dachshund">Dachshund</option>
+                        <option value="Fox Paulistinha">Fox Paulistinha</option>
+                        <option value="Griffon de Bruxelas">Griffon de Bruxelas</option>
+                        <option value="Jack Russell Terrier">Jack Russell Terrier</option>
+                        <option value="Lulu da Pomerânia">Lulu da Pomerânia</option>
+                        <option value="Lulu da Pomerânia">Vira lata</option>
+                        <option value="Lulu da Pomerânia">Outro</option>
+                      </select>
+                      <label for="racaPet">Raça do Pet</label>
+                    </div>
+
+                    <div class="container">
+                      <div class="col s8 m8 l8 offset-s2 offset-m2 offset-l2">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">location_on</i>
+                          <input id="precoVenda" type="number" class="validate" required="required">
+                          <label for="precoVenda">Preço:</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="container">
+                      <div class="col s12 m12 l12">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">mode_edit</i>
+                          <textarea required id="infoComplementar" class="materialize-textarea"></textarea>
+                          <label for="infoComplementar">Informação Complementar</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+                <div class="botaol container">
+                  <div class="col s2 m2 l2">
+                    <center><button id="editar" title="Editar" class="btn-floating btn-large waves-effect waves-light blue darken-1" type="submit"><i class="material-icons">mode_edit</i></button><center>
+                    </div>
+                    <div class="col s2 m2 l2">
+                      <center><button id="visualizar" title="Visualizar" data-target="modal1" class="btn-floating btn-large waves-effect waves-light blue darken-1" type="submit"><i class="fa fa-eye" style="font-size:24px"></i></button><center>
+                      </div>
+                      <!-- <div class="col s2 m2 l2">
+                        <center><button id="limpar" title="Limpar" class="btn-floating btn-large waves-effect waves-light blue darken-1" type="submit"><i class="fa fa-refresh" style="font-size:24px"></i></button><center>
+                        </div> -->
+                        <div class="col s2 m2 l2">
+                          <center><a id="sende" title="Enviar" class="btn-floating btn-large waves-effect waves-light blue darken-1"><i class="fa fa-floppy-o" style="font-size:24px"></i></a><center>
+                          </div>
+                          <div class="col s4 m4 l4">
+                            <center><a id="enviar" title="Enviar e Redirecionar" class="add btn-floating btn-large waves-effect waves-light blue darken-1 right" type="submit"><i class="material-icons">send</i></a><center>
+                            </div>
+                          </div>
+                          <!-- </form> -->
+                          <!-- </div> -->
+                        </div>
+                      <!-- </div>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+
+    </div>
+  </div>
+    <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">PetHolder</h5>
+                <p class="grey-text text-lighten-4">Conosco a venda do seu pet é certa.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="timeline.html">Timeline</a></li>
+                  <li><a class="grey-text text-lighten-3" href="mapa.html">Mapa de pets</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 Carlos Henrique da Costa Silva
+            </div>
+          </div>
+        </footer>
+    <!--Import jQuery before materialize.js-->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script src="js/add-firebase.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/add-vendas.js"></script>
+    <script src="js/listar-vendas.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK12_tji93tov7xAMcyLDcEVJh5gu7s4A&callback=initMap" async="" defer="defer" type="text/javascript"></script>
+  </body>
+  </html>

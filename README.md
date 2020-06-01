@@ -1,27 +1,21 @@
 # PetHolder-Aplicattion
 🐶 Sistema web de vendas e doações de pets desenvolvido com a ferramenta Materialize para a disciplina de Programação para Dispositivos Móveis
 
-### Home Page
+## :rocket: Tecnologias utilizadas 
+O projeto foi feito utilizando as seguintes tecnologias:
 
+- [JavaScript](https://www.javascript.com/)
+- [HTML](https://www.w3schools.com/html/)
+- [CSS](https://www.w3schools.com/css/)
+- [Materialize](https://materializecss.com/)
+- [Firebase](https://firebase.google.com/)
+{...}
+
+### Home Page
 <img src="/img/home-petholder.PNG">
 
 ### Map
-
 <img src="/img/mapa.PNG">
-
-## Getting Started
-
-### Installing
-
-You can also get the latest release using NPM. This release contains source files as well as the compiled CSS and JavaScript files.
-
-```
-$ npm install materialize-css@next
-```
-
-## Built With
-
-* [Materialize](https://materializecss.com/) - The web framework used
 
 ## :page_facing_up: Licença 
 Este projeto é desenvolvido sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para saber mais detalhes.

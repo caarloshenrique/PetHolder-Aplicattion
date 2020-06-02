@@ -1,6 +1,12 @@
 # petholder-aplicattion
 🐶 Sistema web de vendas e doações de pets desenvolvido com a ferramenta Materialize para a disciplina de Programação para Dispositivos Móveis
 
+### Home Page
+<img src="/img/home-petholder.PNG">
+
+### Map
+<img src="/img/mapa.PNG">
+
 ## :rocket: Tecnologias utilizadas 
 O projeto foi feito utilizando as seguintes tecnologias:
 
@@ -10,12 +16,6 @@ O projeto foi feito utilizando as seguintes tecnologias:
 - [Materialize](https://materializecss.com/)
 - [Firebase](https://firebase.google.com/)
 {...}
-
-### Home Page
-<img src="/img/home-petholder.PNG">
-
-### Map
-<img src="/img/mapa.PNG">
 
 ## :page_facing_up: Licença 
 Este projeto é desenvolvido sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para saber mais detalhes.

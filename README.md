@@ -3,8 +3,8 @@
 
 ### Aplicação
 <p align="center">
-  <img width="300" height="600" src="/img/home-petholder.PNG">
-  <img width="300" height="600" src="/img/mapa.PNG">
+  <img width="280" height="530" src="/img/home-petholder.PNG">
+  <img width="280" height="530" src="/img/mapa.PNG">
 </p>
 
 ## :rocket: Tecnologias utilizadas 
